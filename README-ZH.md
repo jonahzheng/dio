@@ -118,7 +118,7 @@ response = await dio.post("/info", data: formData);
 通过FormData上传多个文件:
 
 ```dart
-FormData.fromMap({
+FormData formData = FormData.fromMap({
     "name": "wendux",
     "age": 25,
     "file": await MultipartFile.fromFile("./text.txt",filename: "upload.txt"),
